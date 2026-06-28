@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Uso de la Derivasdas en Economía</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- BOTON VOLVER ARRIBA -->
+    <button id="btnArriba">↑</button>
+    <!-- PORTADA -->
+    <header class="hero">
+        <div class="hero-contenido">
+            <h1>
+                Uso de las Derivadas para Optimizar Costos y Ganancias
+            </h1>
+            <p class="subtitulo">
+                Aplicación del cálculo diferencial
+                en funciones económicas
+            </p>
+            <div class="datos">
+                <p>
+                    <strong>Universidad:</strong>
+                    Universidad Autónoma Gabriel René Moreno 
+                </p>
+                <p>
+                    <strong>Materia:</strong>
+                    Cálculo Diferencial E Integral 1
+                </p>
+                <p>
+                    <strong>Docente:</strong>
+                    Ing. Eudal Avendaño Gonzales
+                </p>
+                <p>
+                    <strong>Integrantes:</strong>
+                </p>
+                <ul>
+                    <li>José M. Taboada V</li>
+                    <li>María L. Cruz R.</li>
+                    <li>Rció Mostacedo Z</li>
+                </ul>
+            </div>
+            <a href="#aprendizaje" class="btn">
+                Comenzar Exposición
+            </a>
+        </div>
+    </header>
+    <!-- MENU -->
+<div class="con" onclick="toggleMenu()"> ☰</div>
+<div class="logo.png" alt="Logo"></div>
+<nav class="menu" id="menu">
+    <a href="#aprendizaje">Aprendizaje</a>
+    <a href="#introduccion">Introducción</a>
+    <a href="#empresa">Caso Real</a>
+    <a href="#importancia">Importancia</a>
+    <a href="#simulador">Simulador</a>
+    <a href="#grafica">Gráfica</a>
+    <a href="#aplicaciones">Aplicaciones</a>
+    <a href="#conclusion">Conclusión</a>
+</nav>
+<div class="logo">
+        <img src="logo.png" alt="Logo">
+</div>
+    <main>
+        <!-- APRENDIZAJE -->
+        <section id="aprendizaje" class="reveal">
+            <h2>🎓 ¿Qué aprenderás hoy?</h2>
+            <div class="tarjetas">
+                <div class="tarjeta">
+                    <h3>¿Qué es una derivada?</h3>
+                    <p>
+                        Comprenderás cómo las derivadas
+                        analizan cambios en una función.
+                    </p>
+                </div>
+                <div class="tarjeta">
+                    <h3>Función de costo</h3>
+                    <p>
+                        Aprenderás cómo representar los
+                        gastos de una empresa.
+                    </p>
+                </div>
+                <div class="tarjeta">
+                    <h3>Función de ingreso</h3>
+                    <p>
+                        Descubrirás cómo se calcula
+                        el dinero obtenido por ventas.
+                    </p>
+                </div>
+                <div class="tarjeta">
+                    <h3>Función de ganancia</h3>
+                    <p>
+                        Verás cómo determinar
+                        el beneficio económico.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- INTRODUCCION -->
+        <section id="introduccion" class="reveal">
+            <h2>📚 Introducción</h2>
+            <p>
+                Las derivadas son una herramienta
+                 fundamental del cálculo diferencial.
+            </p>
+            <p>
+                Permiten estudiar cómo cambian las
+                cantidades y ayudan a encontrar
+                valores máximos y mínimos.
+            </p>
+            <p>
+                En economía se utilizan para optimizar
+                costos, ingresos y ganancias.
+            </p>
+        </section>
+        <!-- CASO REAL -->
+        <section id="empresa" class="reveal">
+            <h2>🏭 Caso Real</h2>
+            <h3>Una fábrica de cuadernos</h3>
+            <p>
+                Imaginemos una empresa que produce
+                cuadernos escolares.
+            </p>
+            <p>
+                Si produce muy pocos cuadernos,
+                las ganancias serán bajas.
+            </p>
+            <p>
+                Si produce demasiados,
+                aumentarán los costos.
+            </p>
+            <p>
+                Surge una pregunta importante:
+            </p>
+            <h3>
+                ¿Cuántos cuadernos debe producir
+                para obtener la máxima ganancia?
+            </h3>
+            <p>
+                Las derivadas permiten responder
+                esta pregunta.
+            </p>
+        </section>
+        <!-- QUE ES UNA DERIVADA -->
+        <section class="reveal">
+            <h2>🧠 ¿Qué es una Derivada?</h2>
+            <p>
+                Una derivada mide la rapidez con la que
+                cambia una cantidad respecto a otra.
+            </p>
+            <div class="proceso">
+                Producción
+                ↓
+                Costos e Ingresos
+                ↓
+                Ganancia
+                ↓
+                Derivada
+                ↓
+                Punto Óptimo
+            </div>
+        </section>
+        <!-- IMPORTANCIA -->
+        <section id="importancia" class="reveal">
+            <h2>📈 ¿Por qué son importantes?</h2>
+            <div class="tarjetas">
+                <div class="tarjeta">
+                    <h3>💰 Maximizar Ganancias</h3>
+                </div>
+                <div class="tarjeta">
+                    <h3>📉 Reducir Costos</h3>
+                </div>
+                <div class="tarjeta">
+                    <h3>🏭 Optimizar Recursos</h3>
+                </div>
+                <div class="tarjeta">
+                    <h3>📊 Tomar Decisiones</h3>
+                </div>
+            </div>
+        </section>
+        <!-- ANTES Y DESPUES -->
+        <section class="reveal">
+            <h2>⚖ Antes y Después</h2>
+            <div class="comparacion">
+                <div class="antes">
+                    <h3>❌ Sin Derivadas</h3>
+                    <p>Más desperdicio</p>
+                    <p>Mayores costos</p>
+                    <p>Menor rentabilidad</p>
+                </div>
+                <div class="despues">
+                    <h3>✅ Con Derivadas</h3>
+                    <p>Producción óptima</p>
+                    <p>Menores costos</p>
+                    <p>Mayor ganancia</p>
+                </div>
+            </div>
+        </section>
+        <!-- CONTADORES -->
+        <section class="reveal">
+            <h2>📊 Indicadores</h2>
+            <div class="contadores">
+                <div class="contador-box">
+                    <span class="contador"
+                        data-target="20">0</span>
+                    <p>Producción Óptima</p>
+                </div>
+                <div class="contador-box">
+                    <span class="contador"
+                        data-target="1100">0</span>
+                    <p>Ganancia Máxima</p>
+                </div>
+                <div class="contador-box">
+                    <span class="contador"
+                        data-target="85">0</span>
+                    <p>% Eficiencia</p>
+                </div>
+            </div>
+        </section>
+        <!-- LINEA DE TIEMPO -->
+        <section class="reveal">
+            <h2>⏳ Proceso de Optimización</h2>
+            <div class="timeline">
+                <div class="evento">
+                    Problema
+                </div>
+                <div class="evento">
+                    Función
+                </div>
+                <div class="evento">
+                    Derivada
+                </div>
+                <div class="evento">
+                    Punto Óptimo
+                </div>
+                <div class="evento">
+                    Decisión
+                </div>
+            </div>
+        </section>
+        <!-- CONCEPTOS -->
+        <section class="reveal">
+            <h2>💵 Conceptos Económicos</h2>
+            <h3>Función de Costo</h3>
+            <p>
+                Representa los gastos de producción.
+            </p>
+            <h3>Función de Ingreso</h3>
+            <p>
+                Representa el dinero obtenido por ventas.
+            </p>
+            <h3>Función de Ganancia</h3>
+            <p>
+                Ganancia = Ingreso − Costo
+            </p>
+        </section>
+        <!-- SIMULADOR -->
+        <section id="simulador" class="reveal">
+            <h2>🧮 Simulador Interactivo</h2>
+            <p>
+                Modifica la producción para observar
+                los cambios económicos.
+            </p>
+            <input
+                type="range"
+                id="sliderProduccion"
+                min="0"
+                max="40"
+                value="20">
+            <h3 id="valorProduccion">
+                Producción: 20 unidades
+            </h3>
+            <div class="resultados">
+                <div class="resultado">
+                    <h3>Costo</h3>
+                    <p id="costo">0</p>
+                </div>
+                <div class="resultado">
+                    <h3>Ingreso</h3>
+                    <p id="ingreso">0</p>
+                </div>
+                <div class="resultado">
+                    <h3>Ganancia</h3>
+                    <p id="ganancia">0</p>
+                </div>
+            </div>
+        </section>
+        <!-- JUEGO -->
+        <section class="reveal">
+            <h2>🎮 Juego Interactivo</h2>
+            <p>
+                Si una empresa produce solo
+                5 unidades:
+            </p>
+            <button onclick="respuestaIncorrecta()">
+                Obtiene la ganancia máxima
+            </button>
+            <button onclick="respuestaCorrecta()">
+                Aún no alcanza la producción óptima
+            </button>
+            <button onclick="respuestaIncorrecta()">
+                La ganancia no cambia
+            </button>
+            <p id="resultadoJuego"></p>
+        </section>
+        <!-- GRAFICA -->
+        <section id="grafica" class="reveal">
+            <h2>📈 Gráfica de Ganancia</h2>
+            <canvas id="graficaGanancia"></canvas>
+        </section>
+        <!-- APLICACIONES -->
+        <section id="aplicaciones" class="reveal">
+            <h2>🌎 Aplicaciones Reales</h2>
+            <div class="tarjetas">
+                <div class="tarjeta">
+                    🏭 Industria
+                </div>
+                <div class="tarjeta">
+                    🏦 Finanzas
+                </div>
+                <div class="tarjeta">
+                    🛒 Comercio
+                </div>
+                <div class="tarjeta">
+                    💻 Tecnología
+                </div>
+                <div class="tarjeta">
+                    🚚 Transporte
+                </div>
+            </div>
+        </section>
+        <!-- HERRAMIENTAS -->
+        <section class="reveal">
+            <h2>🖥 Herramientas Tecnológicas</h2>
+            <ul>
+                <li>GeoGebra</li>
+                <li>Excel</li>
+                <li>MATLAB</li>
+                <li>Mathematica</li>
+                <li>Symbolab</li>
+            </ul>
+        </section>
+        <!-- CURIOSIDADES -->
+        <section class="reveal">
+            <h2>💡 ¿Sabías que...?</h2>
+            <h3 id="curiosidad"></h3>
+        </section>
+        <!-- IDEA PRINCIPAL -->
+        <section class="idea-principal reveal">
+            <h2>🎯 Idea Principal</h2>
+            <h1>
+                Las derivadas ayudan a encontrar
+                el punto donde una empresa obtiene
+                la máxima ganancia posible.
+            </h1>
+        </section>
+        <!-- CONCLUSION -->
+        <section id="conclusion" class="reveal">
+            <h2>🎓 Conclusión</h2>
+            <p>
+                Las derivadas permiten optimizar
+                recursos, reducir costos y maximizar
+                ganancias.
+            </p>
+            <p>
+                Son herramientas matemáticas que
+                ayudan a resolver problemas reales.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>
+            Proyecto Académico de Cálculo Diferencial
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
