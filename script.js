@@ -251,6 +251,13 @@ grafica = new Chart(ctx, {
     },
 
     scales: {
+        x: {
+            ticks: {
+                autoSkip: false,
+                maxRotation: 90,
+                minRotation: 90
+            }
+        },
         y: {
             beginAtZero: false
         }
